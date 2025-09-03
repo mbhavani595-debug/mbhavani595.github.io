@@ -5,53 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bhavani M | Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
       color: #333;
     }
     header {
-      background: #2c3e50;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
       color: #fff;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
     header p {
       font-size: 1.2em;
-      margin-top: 10px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f39c12;
     }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 50px 20px;
+      max-width: 1000px;
       margin: auto;
     }
     h2 {
       color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #3498db;
+      display: inline-block;
+      padding-bottom: 5px;
     }
     .project {
-      margin-bottom: 30px;
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .project h3 {
-      margin: 10px 0 5px;
       color: #34495e;
     }
-    .skills ul, .education ul {
-      list-style: none;
-      padding: 0;
-    }
-    .skills li, .education li {
-      background: #ecf0f1;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 5px;
+    ul li {
+      margin: 8px 0;
     }
     footer {
       background: #2c3e50;
@@ -60,25 +85,35 @@
       padding: 20px;
       margin-top: 40px;
     }
-    a {
-      color: #2980b9;
+    .contact a {
+      color: #3498db;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <header id="home">
     <h1>Bhavani M</h1>
     <p>Aspiring Engineer | ECE Student | Passionate about Coding, IoT & Cybersecurity</p>
   </header>
 
-  <section class="about">
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
     <p>I am a final-year B.Tech ECE student with strong technical skills in programming, IoT, and simulation. Passionate about solving problems and applying project experience in software development, cybersecurity, and embedded systems.</p>
   </section>
 
-  <section class="skills">
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
       <li>Programming Languages: Python, Java, C, SQL</li>
@@ -88,7 +123,7 @@
     </ul>
   </section>
 
-  <section class="projects">
+  <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
@@ -133,7 +168,7 @@
 
   </section>
 
-  <section class="education">
+  <section id="education">
     <h2>Education</h2>
     <ul>
       <li>B.Tech in Electronics and Communication Engineering – Kalasalingam University, TN (2022–2026) – CGPA: 9.14</li>
@@ -142,10 +177,10 @@
     </ul>
   </section>
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:mbhavani595@gmail.com">mbhavani595@gmail.com</a></p>
-    <p>GitHub: <a href="https://mbhavani595.github.io" target="_blank">mbhavani595.github.io</a></p>
+    <p>GitHub: <a href="https://mbhavani595-debug.github.io" target="_blank">mbhavani595-debug.github.io</a></p>
     <p>Phone: 9176417262</p>
   </section>
 
